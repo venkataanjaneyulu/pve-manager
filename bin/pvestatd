@@ -1,0 +1,18 @@
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+
+use PVE::INotify;
+use PVE::RPCEnvironment;
+use PVE::Service::pvestatd;
+
+my $prepare = sub {
+    my $rpcenv = PVE::RPCEnvironment->init('cli');
+
+    $rpcenv->init_request();
+    $rpcenv->set_language($ENV{LANG});
+    $rpcenv->set_user('root@pam');
+};
+
+PVE::Service::pvestatd->run_cli_handler(prepare => $prepare);
