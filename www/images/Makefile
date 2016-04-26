@@ -48,7 +48,10 @@ IMAGES = ${GNOME_IMAGES}	\
 	openvz-on.png		\
 	openvz-off.png		\
 	blank.gif		\
-	swap.png
+	swap.png		\
+	stacbloc_logo		\
+	stackup_logo		
+
 
 .PHONY: install 
 install: ${IMAGES}
