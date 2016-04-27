@@ -67,13 +67,13 @@ Ext.define('PVE.dc.AuthEdit', {
 
 	    if (me.create) throw 'unknown auth type';
 
-	    me.subject = 'Proxmox VE authentication server';
+	    me.subject = 'Authentication Server';
 
 	} else if (me.authType === 'pam') {
 
 	    if (me.create) throw 'unknown auth type';
 
-	    me.subject = 'linux PAM';
+	    me.subject = 'Standard Authentication';
 
 	} else {
 	    throw 'unknown auth type ';
