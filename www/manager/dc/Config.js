@@ -10,7 +10,7 @@ Ext.define('PVE.dc.Config', {
 	me.items = [];
 
 	Ext.apply(me, {
-	    title: gettext("Datacenter"),
+	    title: gettext("Converged Infrastructure"),
 	    hstateid: 'dctab'
 	});
 
